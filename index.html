@@ -1,0 +1,899 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>测试</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/dndx-detail.css" rel="stylesheet" type="text/css"/>
+	<link href="lib/viewer/viewer.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="dnd-left">
+        <div class="dnd-prj-img">
+            <img src="images/bg.jpg"/>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" onclick="openSubMenu(this, event)"><i class="fa fa-fw fa-circle-o"></i>东南大学九龙湖校区<i class="fa fa-fw fa-file-text-o"></i></a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="#" onclick="openSubMenu(this, event)"><i class="fa fa-fw fa-circle-o"></i>建筑<i class=""></i></a>
+                        <ul class="treeview-menu">
+                            <li style="cursor: pointer"><a ui-href="/Base/Auth/Authorize/User" onclick="goUrl(this)"><i class="fa fa-fw fa-circle-thin"></i>图书馆<i class="fa fa-fw fa-file-text-o"></i></a></li>
+                            <li>
+                                <a href="#" onclick="openSubMenu(this, event)"><i class="fa fa-fw fa-circle-o"></i>体育馆<i class=""></i></a>
+                                <ul class="treeview-menu">
+                                    <li style="cursor: pointer"><a ui-href="/Base/Auth/Authorize/User" onclick="goUrl(this)"><i class="fa fa-fw fa-circle-thin"></i>初步设计<i class="fa fa-fw fa-file-text-o"></i></a></li>
+                                    <li style="cursor: pointer"><a ui-href="/Base/Auth/Authorize/User" onclick="goUrl(this)"><i class="fa fa-fw fa-circle-thin"></i>施工图<i class="fa fa-fw fa-file-text-o"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openSubMenu(this, event)"><i class="fa fa-fw fa-circle-o"></i>景观<i class=""></i></a>
+                        <ul class="treeview-menu">
+                            <li style="cursor: pointer"><a ui-href="/Base/Auth/Authorize/User" onclick="goUrl(this)"><i class="fa fa-fw fa-circle-thin"></i>图书馆<i class="fa fa-fw fa-file-text-o"></i></a></li>
+                            <li style="cursor: pointer"><a ui-href="/Base/Auth/Authorize/Role" onclick="goUrl(this)"><i class="fa fa-fw fa-circle-thin"></i>体育馆<i class="fa fa-fw fa-file-text-o"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openSubMenu(this, event)"><i class="fa fa-fw fa-circle-o"></i>室内<i class=""></i></a>
+                        <ul class="treeview-menu">
+                            <li style="cursor: pointer"><a ui-href="/Base/Auth/Authorize/User" onclick="goUrl(this)"><i class="fa fa-fw fa-circle-thin"></i>图书馆<i class="fa fa-fw fa-file-text-o"></i></a></li>
+                            <li style="cursor: pointer"><a ui-href="/Base/Auth/Authorize/Role" onclick="goUrl(this)"><i class="fa fa-fw fa-circle-thin"></i>体育馆<i class="fa fa-fw fa-file-text-o"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openSubMenu(this, event)"><i class="fa fa-fw fa-circle-o"></i>规划<i class=""></i></a>
+                        <ul class="treeview-menu">
+                            <li style="cursor: pointer"><a ui-href="/Base/Auth/Authorize/User" onclick="goUrl(this)"><i class="fa fa-fw fa-circle-thin"></i>图书馆<i class="fa fa-fw fa-file-text-o"></i></a></li>
+                            <li style="cursor: pointer"><a ui-href="/Base/Auth/Authorize/Role" onclick="goUrl(this)"><i class="fa fa-fw fa-circle-thin"></i>体育馆<i class="fa fa-fw fa-file-text-o"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="dnd-right">
+        <div class="dnd-r-head">
+            <div class="dnd-r-head-img">
+                <i class="fa fa-fw fa-file-text-o"></i>
+            </div>
+            <div class="mt5">
+                <div class="of">
+                    <div class="dnd-r-head-title">
+                        初步设计
+                    </div>
+                    <div class="fr">
+                        距离项目完成还有<span class="dnd-r-head-time">25</span>天
+                    </div>
+                </div>
+                <div class="of fz12">
+                    <div class="fl">
+                        东南大学九龙湖校区 > 建筑 > 体育馆 > 初步设计
+                    </div>
+                    <div class="fr">
+                        <div class="fl mr20">项目经理：<span>王大海</span></div>
+                        <div class="fl">参与专业：<span>建筑、结构、景观、给排水、暖通、电力</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dnd-r-tab of">
+            <ul>
+                <li>
+                    <i class="fa fa-fw fa-file-text-o"></i>
+                    <div>项目策划/变更</div>
+                </li>
+                <li class="active">
+                    <i class="fa fa-fw fa-file-text-o"></i>
+                    <div>项目执行</div>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-file-text-o"></i>
+                    <div>设计输出</div>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-file-text-o"></i>
+                    <div>项目策划/变更1</div>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-file-text-o"></i>
+                    <div>项目执行1</div>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-file-text-o"></i>
+                    <div>设计输出1</div>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-file-text-o"></i>
+                    <div>项目策划/变更2</div>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-file-text-o"></i>
+                    <div>项目执行2</div>
+                </li>
+                <li>
+                    <i class="fa fa-fw fa-file-text-o"></i>
+                    <div>设计输出2</div>
+                </li>
+            </ul>
+            <div class="next"></div>
+            <div class="test"></div>
+            <div class="prep"></div>
+        </div>
+        <div class="dnd-box">
+            <div class="dnd-modal">
+                <div class="dnd-modal-l">
+                    <div class="dnd-modal-title">
+                        <span>子项分解</span><span class="detail">（已分解<span class="num">7</span>个子项）</span>
+                    </div>
+                    <ul class="dnd-modal-items">
+                        <li>建筑·图书馆<a>[分配]</a></li>
+                        <li>建筑·图书馆</li>
+                        <li>建筑·图书馆</li>
+                        <li>建筑·图书馆<a>[设置]</a></li>
+                        <li>建筑·图书馆</li>
+                        <li>建筑·图书馆</li>
+                        <li>建筑·图书馆</li>
+                        <li>等级·院审</li>
+                        <li>评优目标·无</li>
+                        <li>结构一所·（叶斯羽，冯岩）</li>
+                        <li>质量要求·优良</li>
+                    </ul>
+                </div>
+                <ul class="dnd-modal-r">
+                    <li class="active">进入</li>
+                </ul>
+            </div>
+
+            <div class="dnd-modal">
+                <div class="dnd-modal-l">
+                    <div class="dnd-modal-title">
+                        <span>目录编辑</span>
+                    </div>
+                    <div class="dnd-modal-no">
+                        <i class="fa fa-fw fa-info-circle"></i>
+                        <div class="fl">对设计输出成果进行定制和描述也可对其它项目档案资料进行收藏和编整。</div>
+                    </div>
+                </div>
+                <ul class="dnd-modal-r">
+                    <li class="active">上传资料</li>
+                </ul>
+            </div>
+
+            <div class="dnd-modal">
+                <div class="dnd-modal-l">
+                    <div class="dnd-modal-title">
+                        <span>任务书</span><a class="more">[查看更多]</a>
+                    </div>
+                    <ul class="dnd-modal-list">
+                        <li>
+                            <div class="left">[<span>下达时间：2016年12月2日14:06</span>]<span class="dnd-modal-item"><a>图书馆</a> · <a>初步设计</a></span></div>
+                            <div class="right">发起人：王大海</div>
+                        </li>
+                        <li>
+                            <div class="left">[<span>下达时间：2016年12月2日14:06</span>]<span class="dnd-modal-item"><a>图书馆</a> · <a>初步设计</a></span></div>
+                            <div class="right">发起人：王大海</div>
+                        </li>
+                        <li>
+                            <div class="left">[<span>下达时间：2016年12月2日14:06</span>]<span class="dnd-modal-item"><a>图书馆</a> · <a>初步设计</a></span></div>
+                            <div class="right">发起人：王大海</div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="dnd-modal-r">
+                    <li class="active">新发起</li>
+                </ul>
+            </div>
+
+            <div class="dnd-modal">
+                <div class="dnd-modal-l">
+                    <div class="dnd-modal-title">
+                        <span>设计输入</span><a class="more">[查看更多]</a>
+                    </div>
+                    <ul class="dnd-modal-list">
+                        <li>
+                            <div class="left">[<span>2016年11月30日</span>]<span class="dnd-modal-lt">东南大学九龙湖项目主签署工程总承包合同</span></div>
+                            <div class="right">提出：建筑/王大海</div>
+                        </li>
+                        <li>
+                            <div class="left">[<span>2016年11月30日</span>]<span class="dnd-modal-lt">东南大学九龙湖项目主签署工程总承包合同</span></div>
+                            <div class="right">提出：建筑/王大海</div>
+                        </li>
+                        <li>
+                            <div class="left">[<span>2016年11月30日</span>]<span class="dnd-modal-lt">东南大学九龙湖项目主签署工程总承包合同</span></div>
+                            <div class="right">提出：建筑/王大海</div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="dnd-modal-r">
+                    <li class="active">上传资料</li>
+                    <li>提交审批</li>
+                    <li>提交归档</li>
+                </ul>
+            </div>
+
+            <div class="dnd-modal">
+                <div class="dnd-modal-l">
+                    <div class="dnd-modal-title">
+                        <span>项目讨论</span><a class="more">[查看更多]</a>
+                    </div>
+                    <ul class="dnd-modal-list">
+                        <li>
+                            <div class="left">[<span>2016年11月30日</span>]<span class="dnd-modal-lt">东南大学九龙湖项目主签署工程总承包合同</span></div>
+                        </li>
+                        <li>
+                            <div class="left">[<span>2016年11月30日</span>]<span class="dnd-modal-lt">东南大学九龙湖项目主签署工程总承包合同</span></div>
+                        </li>
+                        <li>
+                            <div class="left">[<span>2016年11月30日</span>]<span class="dnd-modal-lt">东南大学九龙湖项目主签署工程总承包合同</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="dnd-modal-r">
+                    <li class="active" onclick="sendArticle()">发布文章</li>
+                    <li>查看回复</li>
+                </ul>
+            </div>
+
+            <div class="dnd-modal">
+                <div class="dnd-modal-l">
+                    <div class="dnd-modal-title">
+                        <span>客户资料</span><a class="more">[查看更多]</a>
+                    </div>
+                    <div class="dnd-modal-no">
+                        <img src="images/no.png"/>
+                        <div class="fl">暂无内容，你来<a>添加</a>一条吧！
+                        </div>
+                    </div>
+                </div>
+                <ul class="dnd-modal-r">
+                    <li class="active">上传资料</li>
+                </ul>
+            </div>
+
+            <div class="dnd-modal">
+                <div class="dnd-modal-l">
+                    <div class="dnd-modal-title">
+                        <span>归档申请</span><a class="more">[查看更多]</a>
+                    </div>
+                    <ul class="dnd-modal-list">
+                        <li>
+                            <div class="left">[<span>发起时间：2016年12月2日14:06</span>]<span class="dnd-modal-lt">东南大学九龙湖项目主签署工程总承包合同</span></div>
+                            <div class="right">发起人：王大海</div>
+                        </li>
+                        <li>
+                            <div class="left">[<span>发起时间：2016年12月2日14:06</span>]<span class="dnd-modal-lt">东南大学九龙湖项目主签署工程总承包合同</span></div>
+                            <div class="right">发起人：王大海</div>
+                        </li>
+                        <li>
+                            <div class="left">[<span>发起时间：2016年12月2日14:06</span>]<span class="dnd-modal-lt">东南大学九龙湖项目主签署工程总承包合同</span></div>
+                            <div class="right">发起人：王大海</div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="dnd-modal-r">
+                    <li class="active">新发起</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 话题讨论 -->
+    <div class="x-mdbox" onclick="closeArticle(this,event)" id="article">
+        <div class="x-mdbox-body">
+            <div class="x-mdbox-title">
+                项目讨论
+                <i class="fa fa-fw fa-close" onclick="closeArticle(this, event)"></i>
+                <i class="fa fa-fw fa-square-o" onclick="enlargeArticle(this, event)"></i>
+            </div>
+            <div class="x-mdbox-sub-title">
+                <ul id="article_tab">
+                    <li class="active">全部话题</li>
+                    <li>我发布的</li>
+                    <li>我回复的</li>
+                    <li>我赞过的</li>
+                </ul>
+                <div class="x-mdbox-input">
+                    <input type="text" placeholder="搜索"/>
+                    <i class="fa fa-fw fa-search"></i>
+                </div>
+            </div>
+            <ul class="x-mdbox-list">
+                <li class="list-box">
+                    <div class="x-mblist-first">
+                        <img src="images/user.jpg" class="list-box-userimg"/>
+                        <div class="x-mblist-first-cnt">
+                            <div class="x-mblist-first-cnt-1">
+                                <span class="name">王大海</span>
+                                <span class="position">项目经理</span>
+                            </div>
+                            <div class="x-mblist-first-cnt-2">
+                                关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜，不要求高大上，不要求填满留白的天使甲方你遇到了吗？
+                            </div>
+                            <ul>
+                                <li><img data-origin="images/demo/photo1.png" src="images/demo/photo1.png"/></li>
+                                <li><img data-origin="images/demo/photo2.png" src="images/demo/photo2.png"/></li>
+                                <li><img data-origin="images/demo/photo3.jpg" src="images/demo/photo3.jpg"/></li>
+                                <li><img data-origin="images/demo/photo4.jpg" src="images/demo/photo4.jpg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="x-mblist-second">
+                        <div class="time">10月11日 23:05</div>
+                        <ul>
+                            <li onclick="openReply(this)">
+                                <i class="fa fa-fw fa-comment-o"></i>
+                                <span>0</span>
+                            </li>
+                            <li onclick="focus(this)">
+                                <i class="fa fa-fw fa-heart-o"></i>
+                                <span>21</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="x-mdbox-reply">
+                        <div class="xmr-box">
+                            <img src="images/user.jpg"/>
+                            <div class="xmr-box-input"><input type="text"/>
+                            </div>
+                            <div class="xmr-box-comment">评论</div>
+                        </div>
+                        <div class="xmr-tab">
+                            <span class="all active">全部</span>
+                            <span class="fgx">|</span>
+                            <span class="my">我的</span>  
+                        </div>
+                        <ul class="xmr-list">
+                            <li>
+                                <div class="left">
+                                    <img src="images/user.jpg"/>
+                                </div>
+                                <div class="right">
+                                    <div class="xmrl-cnt">
+                                        <span class="username">李梅</span>：
+                                        <span>关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜</span>
+                                    </div>
+                                    <div class="xmrl-info">
+                                        <div class="time">10月11日 23:05</div>
+                                        <div class="xmrl-info-btn" onclick="openReplyBox(this)">回复</div>
+                                        <div class="xmrl-replybox">
+                                            <div class="xmrl-replybox-cnt">
+                                                <div class="xmrl-replybox-input">
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="xmr-box-comment">评论</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="xmr-sublist">
+                                        <li>
+                                            <div class="xmrl-cnt">
+                                                <span class="username">李梅</span>：
+                                                <span>关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜</span>
+                                            </div>
+                                            <div class="xmrl-info">
+                                                <div class="time">10月11日 23:05</div>
+                                                <div class="xmrl-info-btn" onclick="openReplyBox(this)">回复</div>
+                                                <div class="xmrl-replybox">
+                                                    <div class="xmrl-replybox-cnt">
+                                                        <div class="xmrl-replybox-input">
+                                                            <input type="text"/>
+                                                        </div>
+                                                        <div class="xmr-box-comment">评论</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="xmrl-cnt">
+                                                <span class="username">李梅</span>：
+                                                <span>关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜</span>
+                                            </div>
+                                            <div class="xmrl-info">
+                                                <div class="time">10月11日 23:05</div>
+                                                <div class="xmrl-info-btn" onclick="openReplyBox(this)">回复</div>
+                                                <div class="xmrl-replybox">
+                                                    <div class="xmrl-replybox-cnt">
+                                                        <div class="xmrl-replybox-input">
+                                                            <input type="text"/>
+                                                        </div>
+                                                        <div class="xmr-box-comment">评论</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <img src="images/user.jpg"/>
+                                </div>
+                                <div class="right">
+                                    <div class="xmrl-cnt">
+                                        <span class="username">李梅</span>：
+                                        <span>这种甲方应该很好沟通，大家应该会惺惺相惜</span>
+                                    </div>
+                                    <div class="xmrl-info">
+                                        <div class="time">10月11日 23:05</div>
+                                        <div class="xmrl-info-btn" onclick="openReplyBox(this)">回复</div>
+                                        <div class="xmrl-replybox">
+                                            <div class="xmrl-replybox-cnt">
+                                                <div class="xmrl-replybox-input">
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="xmr-box-comment">评论</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-box">
+                    <div class="x-mblist-first">
+                        <img src="images/user.jpg" class="list-box-userimg"/>
+                        <div class="x-mblist-first-cnt">
+                            <div class="x-mblist-first-cnt-1">
+                                <span class="name">王大海</span>
+                                <span class="position">项目经理</span>
+                            </div>
+                            <div class="x-mblist-first-cnt-2">
+                                关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜，不要求高大上，不要求填满留白的天使甲方你遇到了吗？
+                            </div>
+                            <ul>
+                                <li><img data-origin="images/demo/photo1.png" src="images/demo/photo1.png"/></li>
+                                <li><img data-origin="images/demo/photo2.png" src="images/demo/photo2.png"/></li>
+                                <li><img data-origin="images/demo/photo3.jpg" src="images/demo/photo3.jpg"/></li>
+                                <li><img data-origin="images/demo/photo4.jpg" src="images/demo/photo4.jpg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="x-mblist-second">
+                        <div class="time">10月11日 23:05</div>
+                        <ul>
+                            <li onclick="openReply(this)">
+                                <i class="fa fa-fw fa-comment-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li onclick="focus(this)">
+                                <i class="fa fa-fw fa-heart-o"></i>
+                                <span>21</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="x-mdbox-reply">
+                        <div class="xmr-box">
+                            <img src="images/user.jpg"/>
+                            <div class="xmr-box-input"><input type="text"/>
+                            </div>
+                            <div class="xmr-box-comment">评论</div>
+                        </div>
+                        <div class="xmr-tab">
+                            <span class="all active">全部</span>
+                            <span class="fgx">|</span>
+                            <span class="my">我的</span>  
+                        </div>
+                        <ul class="xmr-list">
+                            <li>
+                                <div class="left">
+                                    <img src="images/user.jpg"/>
+                                </div>
+                                <div class="right">
+                                    <div class="xmrl-cnt">
+                                        <span class="username">李梅</span>：
+                                        <span>关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜</span>
+                                    </div>
+                                    <div class="xmrl-info">
+                                        <div class="time">10月11日 23:05</div>
+                                        <div class="xmrl-info-btn" onclick="openReplyBox(this)">回复</div>
+                                        <div class="xmrl-replybox">
+                                            <div class="xmrl-replybox-cnt">
+                                                <div class="xmrl-replybox-input">
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="xmr-box-comment">评论</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="xmr-sublist">
+                                        <li>
+                                            <div class="xmrl-cnt">
+                                                <span class="username">李梅</span>：
+                                                <span>关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜</span>
+                                            </div>
+                                            <div class="xmrl-info">
+                                                <div class="time">10月11日 23:05</div>
+                                                <div class="xmrl-info-btn" onclick="openReplyBox(this)">回复</div>
+                                                <div class="xmrl-replybox">
+                                                    <div class="xmrl-replybox-cnt">
+                                                        <div class="xmrl-replybox-input">
+                                                            <input type="text"/>
+                                                        </div>
+                                                        <div class="xmr-box-comment">评论</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="xmrl-cnt">
+                                                <span class="username">李梅</span>：
+                                                <span>关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜</span>
+                                            </div>
+                                            <div class="xmrl-info">
+                                                <div class="time">10月11日 23:05</div>
+                                                <div class="xmrl-info-btn" onclick="openReplyBox(this)">回复</div>
+                                                <div class="xmrl-replybox">
+                                                    <div class="xmrl-replybox-cnt">
+                                                        <div class="xmrl-replybox-input">
+                                                            <input type="text"/>
+                                                        </div>
+                                                        <div class="xmr-box-comment">评论</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <img src="images/user.jpg"/>
+                                </div>
+                                <div class="right">
+                                    <div class="xmrl-cnt">
+                                        <span class="username">李梅</span>：
+                                        <span>这种甲方应该很好沟通，大家应该会惺惺相惜</span>
+                                    </div>
+                                    <div class="xmrl-info">
+                                        <div class="time">10月11日 23:05</div>
+                                        <div class="xmrl-info-btn" onclick="openReplyBox(this)">回复</div>
+                                        <div class="xmrl-replybox">
+                                            <div class="xmrl-replybox-cnt">
+                                                <div class="xmrl-replybox-input">
+                                                    <input type="text"/>
+                                                </div>
+                                                <div class="xmr-box-comment">评论</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-box">
+                    <div class="x-mblist-first">
+                        <img src="images/user.jpg" class="list-box-userimg"/>
+                        <div class="x-mblist-first-cnt">
+                            <div class="x-mblist-first-cnt-1">
+                                <span class="name">王大海</span>
+                                <span class="position">项目经理</span>
+                            </div>
+                            <div class="x-mblist-first-cnt-2">
+                                关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜，不要求高大上，不要求填满留白的天使甲方你遇到了吗？
+                            </div>
+                            <ul>
+                                <li><img data-origin="images/demo/photo1.png" src="images/demo/photo1.png"/></li>
+                                <li><img data-origin="images/demo/photo2.png" src="images/demo/photo2.png"/></li>
+                                <li><img data-origin="images/demo/photo3.jpg" src="images/demo/photo3.jpg"/></li>
+                                <li><img data-origin="images/demo/photo4.jpg" src="images/demo/photo4.jpg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="x-mblist-second">
+                        <div class="time">10月11日 23:05</div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-fw fa-comment-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-fw fa-heart-o"></i>
+                                <span>21</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-box">
+                    <div class="x-mblist-first">
+                        <img src="images/user.jpg" class="list-box-userimg"/>
+                        <div class="x-mblist-first-cnt">
+                            <div class="x-mblist-first-cnt-1">
+                                <span class="name">王大海</span>
+                                <span class="position">项目经理</span>
+                            </div>
+                            <div class="x-mblist-first-cnt-2">
+                                关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜，不要求高大上，不要求填满留白的天使甲方你遇到了吗？
+                            </div>
+                            <ul>
+                                <li><img data-origin="images/demo/photo1.png" src="images/demo/photo1.png"/></li>
+                                <li><img data-origin="images/demo/photo2.png" src="images/demo/photo2.png"/></li>
+                                <li><img data-origin="images/demo/photo3.jpg" src="images/demo/photo3.jpg"/></li>
+                                <li><img data-origin="images/demo/photo4.jpg" src="images/demo/photo4.jpg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="x-mblist-second">
+                        <div class="time">10月11日 23:05</div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-fw fa-comment-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-fw fa-heart-o"></i>
+                                <span>21</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-box">
+                    <div class="x-mblist-first">
+                        <img src="images/user.jpg" class="list-box-userimg"/>
+                        <div class="x-mblist-first-cnt">
+                            <div class="x-mblist-first-cnt-1">
+                                <span class="name">王大海</span>
+                                <span class="position">项目经理</span>
+                            </div>
+                            <div class="x-mblist-first-cnt-2">
+                                关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜，不要求高大上，不要求填满留白的天使甲方你遇到了吗？
+                            </div>
+                            <ul>
+                                <li><img data-origin="images/demo/photo1.png" src="images/demo/photo1.png"/></li>
+                                <li><img data-origin="images/demo/photo2.png" src="images/demo/photo2.png"/></li>
+                                <li><img data-origin="images/demo/photo3.jpg" src="images/demo/photo3.jpg"/></li>
+                                <li><img data-origin="images/demo/photo4.jpg" src="images/demo/photo4.jpg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="x-mblist-second">
+                        <div class="time">10月11日 23:05</div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-fw fa-comment-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-fw fa-heart-o"></i>
+                                <span>21</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-box">
+                    <div class="x-mblist-first">
+                        <img src="images/user.jpg" class="list-box-userimg"/>
+                        <div class="x-mblist-first-cnt">
+                            <div class="x-mblist-first-cnt-1">
+                                <span class="name">王大海</span>
+                                <span class="position">项目经理</span>
+                            </div>
+                            <div class="x-mblist-first-cnt-2">
+                                关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜，不要求高大上，不要求填满留白的天使甲方你遇到了吗？
+                            </div>
+                            <ul>
+                                <li><img data-origin="images/demo/photo1.png" src="images/demo/photo1.png"/></li>
+                                <li><img data-origin="images/demo/photo2.png" src="images/demo/photo2.png"/></li>
+                                <li><img data-origin="images/demo/photo3.jpg" src="images/demo/photo3.jpg"/></li>
+                                <li><img data-origin="images/demo/photo4.jpg" src="images/demo/photo4.jpg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="x-mblist-second">
+                        <div class="time">10月11日 23:05</div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-fw fa-comment-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-fw fa-heart-o"></i>
+                                <span>21</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-box">
+                    <div class="x-mblist-first">
+                        <img src="images/user.jpg" class="list-box-userimg"/>
+                        <div class="x-mblist-first-cnt">
+                            <div class="x-mblist-first-cnt-1">
+                                <span class="name">王大海</span>
+                                <span class="position">项目经理</span>
+                            </div>
+                            <div class="x-mblist-first-cnt-2">
+                                关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜，不要求高大上，不要求填满留白的天使甲方你遇到了吗？
+                            </div>
+                            <ul>
+                                <li><img data-origin="images/demo/photo1.png" src="images/demo/photo1.png"/></li>
+                                <li><img data-origin="images/demo/photo2.png" src="images/demo/photo2.png"/></li>
+                                <li><img data-origin="images/demo/photo3.jpg" src="images/demo/photo3.jpg"/></li>
+                                <li><img data-origin="images/demo/photo4.jpg" src="images/demo/photo4.jpg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="x-mblist-second">
+                        <div class="time">10月11日 23:05</div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-fw fa-comment-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-fw fa-heart-o"></i>
+                                <span>21</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list-box">
+                    <div class="x-mblist-first">
+                        <img src="images/user.jpg" class="list-box-userimg"/>
+                        <div class="x-mblist-first-cnt">
+                            <div class="x-mblist-first-cnt-1">
+                                <span class="name">王大海</span>
+                                <span class="position">项目经理</span>
+                            </div>
+                            <div class="x-mblist-first-cnt-2">
+                                关于室内设计和建筑设计工作室的一组网站设计，主要有蓝色和灰色两种色系，这种甲方应该很好沟通，大家应该会惺惺相惜，不要求高大上，不要求填满留白的天使甲方你遇到了吗？
+                            </div>
+                            <ul>
+                                <li><img data-origin="images/demo/photo1.png" src="images/demo/photo1.png"/></li>
+                                <li><img data-origin="images/demo/photo2.png" src="images/demo/photo2.png"/></li>
+                                <li><img data-origin="images/demo/photo3.jpg" src="images/demo/photo3.jpg"/></li>
+                                <li><img data-origin="images/demo/photo4.jpg" src="images/demo/photo4.jpg"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="x-mblist-second">
+                        <div class="time">10月11日 23:05</div>
+                        <ul>
+                            <li>
+                                <i class="fa fa-fw fa-comment-o"></i>
+                                <span>12</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-fw fa-heart-o"></i>
+                                <span>21</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="lib/viewer/viewer.min.js"></script>
+<script type="text/javascript">
+    function openReply(e) {
+        var cur = $(e);
+        var reply=cur.parent().parent().siblings(".x-mdbox-reply");
+        var num = parseInt(cur.find("span").text());
+        if (num == 0) {
+            reply.addClass("no-reply");
+        }
+        reply.toggle();
+    }
+
+    function openReplyBox(e) {
+        var cur = $(e);
+        cur.siblings(".xmrl-replybox").toggle();
+    }
+
+    $(".list-box").find("ul").each(function() {
+        var viewer = new Viewer($(this)[0], {
+            url: 'data-origin'
+        });
+    });
+
+    $(".xmr-tab").find("span").click(function() {
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+    });
+
+    function sendArticle() {
+        $("#article").show();
+    }
+
+    function closeArticle(cur, e) {
+         e=e||window.event;  
+         var className=e.target?e.target.className:e.srcElement.className;
+        if ($(cur).hasClass(className)) {
+            $("#article").hide();
+        }
+    }
+
+    function enlargeArticle() {
+        $("#article").toggleClass("enlarge");
+    }
+
+    $("#article_tab").find("li").click(function () {
+        var cur = $(this);
+        cur.addClass("active");
+        cur.siblings("li").removeClass("active");
+    });
+
+    function openSubMenu(cur, e) {
+        var $this = $(cur);
+        var checkElement = $this.next();
+
+        if ((checkElement.is('.treeview-menu')) && (checkElement.is(':visible'))) {
+            checkElement.slideUp('normal', function () {
+                checkElement.removeClass('menu-open');
+            });
+            checkElement.parent("li").removeClass("active");
+        }
+        else if ((checkElement.is('.treeview-menu')) && (!checkElement.is(':visible'))) {
+            var parent = $this.parents('ul').first();
+            var ul = parent.find('ul:visible').slideUp('normal');
+            ul.removeClass('menu-open');
+            var parent_li = $this.parent("li");
+            checkElement.slideDown('normal', function () {
+                checkElement.addClass('menu-open');
+                parent.find('li.active').removeClass('active');
+                parent_li.addClass('active');
+            });
+        }
+        if (checkElement.is('.treeview-menu')) {
+            e.preventDefault();
+        }
+    }
+
+    $(function() {
+        var maxCount = Math.floor(($("html").width() - 230) / 200);
+        var tab = $(".dnd-r-tab");
+        var items = tab.find("li");
+        var index = 0;
+        var dc = items.length - maxCount;
+        if (dc > 0 ) {
+            var next = tab.find(".next");
+            var prep = tab.find(".prep");
+            next.show();
+            var flag = true;
+            next.click(function () {
+                if (index < dc && flag) {
+                    flag = false;
+                    tab.find("li:eq(" + (index++) + ")").animate({ "margin-left": "-200px" }, 300);
+                    setTimeout(function() {
+                        flag = true;
+                        index > 0 && prep.show();
+                        index === dc && next.hide();
+                    }, 300);
+                }
+            });
+
+            prep.click(function() {
+                if (index >= 0 && flag) {
+                    flag = false;
+                    tab.find("li:eq(" + (--index) + ")").animate({ "margin-left": "0" }, 300);
+                    setTimeout(function () {
+                        flag = true;
+                        index === 0 && prep.hide();
+                        index < dc && next.show();
+                    }, 300);
+                }
+            });
+
+            items.click(function(){
+            	$(this).addClass("active");
+            	$(this).siblings().removeClass("active");
+            })
+        }
+    });
+</script>
