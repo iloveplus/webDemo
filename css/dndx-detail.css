@@ -607,6 +607,7 @@ a {text-decoration: none!important;}
 }
 .xmr-sublist li {
     border-bottom: 1px solid #f5f3ff;
+    width: 100%;
 }
 .xmrl-replybox {
     clear: both;
